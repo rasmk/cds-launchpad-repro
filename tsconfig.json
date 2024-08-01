@@ -1,0 +1,5 @@
+{
+  "extends": "./misc/shared-settings/tsconfig-backend.json",
+  "exclude": ["node_modules", "app", "repl", "gen", "dist", "submodules/shared/ui"],
+  "compilerOptions": {}
+}

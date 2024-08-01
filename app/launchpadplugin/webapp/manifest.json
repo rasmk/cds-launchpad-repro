@@ -1,0 +1,96 @@
+{
+  "_version": "1.48.0",
+  "sap.app": {
+    "id": "com.pacg.cssp.launchpadplugin",
+    "type": "component",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.8.2",
+      "toolsId": "e5d9a75a-5390-4c66-8987-20260d0a3341"
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "Shell-plugin": {
+          "semanticObject": "Shell",
+          "action": "plugin",
+          "signature": {
+            "additionalParameters": "allowed",
+            "parameters": {}
+          },
+          "hideLauncher": true
+        }
+      }
+    },
+    "dataSources": {}
+  },
+  "sap.flp": {
+    "type": "plugin"
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.platform.cf": {
+    "ui5VersionNumber": "1.122.x"
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.122.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.pacg.cssp.launchpadplugin.i18n.i18n"
+        }
+      },
+      "@i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "uri": "i18n/i18n.properties"
+      }
+    },
+    "extends": {
+      "extensions": {
+        "sap.ui.controllerExtensions": {}
+      }
+    }
+  },
+  "sap.cloud": {
+    "public": true,
+    "service": "customer_self_service_portal"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "${configDir}/webapp",
+    "outDir": "${configDir}/dist",
+    "typeRoots": ["../../node_modules/@types", "../../node_modules/@sapui5/types"]
+  },
+  "include": ["${configDir}/webapp/**/*"]
+}

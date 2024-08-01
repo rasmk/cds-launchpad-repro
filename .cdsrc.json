@@ -1,0 +1,18 @@
+{
+  "features": {
+    "kibana_formatter": true
+  },
+  "launchpad": {
+    "theme": "sap_horizon",
+    "version": "1.122.2"
+  },
+  "requires": {
+    "db": {
+      "kind": "sql",
+      "credentials": {}
+    },
+    "auth": {
+      "kind": "basic"
+    }
+  }
+}

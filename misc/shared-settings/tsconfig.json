@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2022",
+    "module": "es2022",
+    "moduleResolution": "Bundler",
+    "skipLibCheck": true,
+    "declaration": false,
+    "sourceMap": false,
+    "strictPropertyInitialization": false
+  },
+  "exclude": ["node_modules"]
+}

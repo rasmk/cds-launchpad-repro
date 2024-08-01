@@ -1,0 +1,28 @@
+{
+  "attributes": [],
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.PortalUser",
+      "description": "Portal User"
+    },
+    {
+      "name": "$XSAPPNAME.PortalAdmin",
+      "description": "Portal Admin"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "PortalUser",
+      "description": "Portal User",
+      "scope-references": ["$XSAPPNAME.PortalUser"],
+      "attribute-references": []
+    },
+    {
+      "name": "PortalAdmin",
+      "description": "Portal Admin",
+      "scope-references": ["$XSAPPNAME.PortalAdmin"],
+      "attribute-references": []
+    }
+  ],
+  "authorities-inheritance": false
+}

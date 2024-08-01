@@ -37,7 +37,8 @@
     "node": "^20"
   },
   "sapux": [
-    "app/launchpadplugin"
+    "app/launchpadplugin",
+    "app/tslaunchpadplugin"
   ],
   "workspaces": [
     "app/*"

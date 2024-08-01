@@ -1,0 +1,4 @@
+{
+  "root": true,
+  "extends": ["plugin:@sap-ux/eslint-plugin-fiori-tools/defaultTS", "../../misc/shared-settings/eslintrc.js"]
+}
